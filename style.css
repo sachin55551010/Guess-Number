@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+background-color: rgb(53, 53, 53);
+border-radius: 10px;
+color: white;
+width: 70vw;
+/* height: 50vh; */
+}
+form {
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.FormBox {
+    margin: 10px;
+    /* background-color: rgb(255, 255, 255); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.FormBox .Button {
+    margin-top: 20px;
+    width: 65px;
+    height: 25px;
+}
+.Rules {
+    font-weight: 900;
+    font-style: italic;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.Rules p {
+    margin: 10px 2px 10px 2px;
+}
+.ResultPara {
+    margin-top: 20px;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.LowHi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
