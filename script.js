@@ -34,6 +34,7 @@ function validateGuess(guess) {
         prevguess.push(guess);
         if (numOfGuesses === 10) {
             cleanupGuess(guess);
+            lowHi.style.color = 'red'
             displayMessage(`Game Over, The Number was ${randomNumber}`);
             endGame();
         }
@@ -46,13 +47,16 @@ function validateGuess(guess) {
 
 function checkGuess(guess) {
     if (guess === randomNumber) {
+        lowHi.style.color = '#3cff2e'
         displayMessage(`You Won! You Guessed it Right`)
         endGame();
     }
     else if (guess > randomNumber) {
+        lowHi.style.color = 'red'
         displayMessage(`Number High Please Enter Lower Number`)
     }
     else if (guess < randomNumber) {
+        lowHi.style.color = 'red'
         displayMessage(`Number is Low Please Enter Higher Number`)
     }
 }
