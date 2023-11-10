@@ -48,16 +48,31 @@ function validateGuess(guess) {
 function checkGuess(guess) {
     if (guess === randomNumber) {
         lowHi.style.color = '#3cff2e'
+        lowHi.style.background = 'black'
+        lowHi.style.border = '2px solid white'
+        lowHi.style.boxShadow = '5px 5px 10px black'
+        lowHi.style.borderRadius = '10px'
+        lowHi.style.padding = '15px'
         displayMessage(`You Won! You Guessed it Right`)
         endGame();
     }
     else if (guess > randomNumber) {
         lowHi.style.color = 'red'
-        displayMessage(`Number High Please Enter Lower Number`)
+        lowHi.style.background = 'black'
+        lowHi.style.border = '2px solid white'
+        lowHi.style.boxShadow = '5px 5px 10px black'
+        lowHi.style.borderRadius = '10px'
+        lowHi.style.padding = '10px'
+        displayMessage(`Please Enter Smaller Number`)
     }
     else if (guess < randomNumber) {
         lowHi.style.color = 'red'
-        displayMessage(`Number is Low Please Enter Higher Number`)
+        lowHi.style.background = 'black'
+        lowHi.style.border = '2px solid white'
+        lowHi.style.boxShadow = '5px 5px 10px black'
+        lowHi.style.borderRadius = '10px'
+        lowHi.style.padding = '10px'
+        displayMessage(`Please Enter Bigger Number`)
     }
 }
 
@@ -93,6 +108,7 @@ function newGame() {
         userInput.removeAttribute('disabled');
         startOver.removeChild(p);
         displayMessage('');
+        lowHi.style = ''
         playGame = true;
     })
 }

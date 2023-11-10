@@ -100,4 +100,7 @@ form {
     #userInput {
         height: 30px;
     }
+    .LowHi {
+        font-size:13px ;
+    }
 }
