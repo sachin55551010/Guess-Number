@@ -83,7 +83,7 @@ form {
     flex-direction: column;
     margin: 10px;
 }
-@media (max-width:330px) {
+@media (max-width:500px) {
     #top-heading {
         font-size: 20px;
         margin-top: 20px;
@@ -91,7 +91,12 @@ form {
     .Rules p {
         font-size: 10px;
     }
-    .UserInput {
-        height: 35px;
+    #btn {
+        width: 100px;
+        height: 70px;
     }
+    #userInput {
+        height: 30px;
+    }
+
 }
